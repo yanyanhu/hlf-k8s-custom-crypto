@@ -86,10 +86,6 @@ spec:
           value: /etc/hyperledger/fabric/tls/server.key
         - name: CORE_PEER_TLS_ROOTCERT_FILE
           value: /etc/hyperledger/fabric/tls/ca.crt
-        - name: CORE_LEDGER_STATE_STATEDATABASE
-          value: "CouchDB"
-        - name: CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS
-          value: "fabric-couchdb-01:5984"
         image: hyperledger/fabric-peer
         imagePullPolicy: Never
         name: fabric-peer0-org1

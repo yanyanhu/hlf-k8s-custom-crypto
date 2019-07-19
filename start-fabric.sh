@@ -7,52 +7,52 @@ echo "============== Starting Fabric Services ================"
 
 
 
-echo "- Creating Fabric Supporting Services"
-echo ""
-echo "  - Zookepeer Services: kubectl create -f fabric-zookeeper0-service.yaml"
-kubectl create -f fabric-zookeeper0-service.yaml
-echo "  - Zookeeper Deployments: kubectl create -f fabric-zookeeper0-deployment.yaml"
-kubectl create -f fabric-zookeeper0-deployment.yaml
+#echo "- Creating Fabric Supporting Services"
+#echo ""
+#echo "  - Zookepeer Services: kubectl create -f fabric-zookeeper0-service.yaml"
+#kubectl create -f fabric-zookeeper0-service.yaml
+#echo "  - Zookeeper Deployments: kubectl create -f fabric-zookeeper0-deployment.yaml"
+#kubectl create -f fabric-zookeeper0-deployment.yaml
+#
+#echo "  - Zookepeer Services: kubectl create -f fabric-zookeeper1-service.yaml"
+#kubectl create -f fabric-zookeeper1-service.yaml
+#echo "  - Zookeeper Deployments: kubectl create -f fabric-zookeeper1-deployment.yaml"
+#kubectl create -f fabric-zookeeper1-deployment.yaml
+#
+#echo "  - Zookepeer Services: kubectl create -f fabric-zookeeper2-service.yaml"
+#kubectl create -f fabric-zookeeper2-service.yaml
+#echo "  - Zookeeper Deployments: kubectl create -f fabric-zookeeper2-deployment.yaml"
+#kubectl create -f fabric-zookeeper2-deployment.yaml
 
-echo "  - Zookepeer Services: kubectl create -f fabric-zookeeper1-service.yaml"
-kubectl create -f fabric-zookeeper1-service.yaml
-echo "  - Zookeeper Deployments: kubectl create -f fabric-zookeeper1-deployment.yaml"
-kubectl create -f fabric-zookeeper1-deployment.yaml
+#echo "  - [waiting 5s]"
+#sleep 5
 
-echo "  - Zookepeer Services: kubectl create -f fabric-zookeeper2-service.yaml"
-kubectl create -f fabric-zookeeper2-service.yaml
-echo "  - Zookeeper Deployments: kubectl create -f fabric-zookeeper2-deployment.yaml"
-kubectl create -f fabric-zookeeper2-deployment.yaml
+#echo "  - Kafka Services: kubectl create -f fabric-kafka0-service.yaml"
+#kubectl create -f fabric-kafka0-service.yaml
+#echo "  - Kafka Deployments: kubectl create -f fabric-kafka0-deployment.yaml"
+#kubectl create -f fabric-kafka0-deployment.yaml
+#
+#echo "  - Kafka Services: kubectl create -f fabric-kafka1-service.yaml"
+#kubectl create -f fabric-kafka1-service.yaml
+#echo "  - Kafka Deployments: kubectl create -f fabric-kafka1-deployment.yaml"
+#kubectl create -f fabric-kafka1-deployment.yaml
+#
+#echo "  - Kafka Services: kubectl create -f fabric-kafka2-service.yaml"
+#kubectl create -f fabric-kafka2-service.yaml
+#echo "  - Kafka Deployments: kubectl create -f fabric-kafka2-deployment.yaml"
+#kubectl create -f fabric-kafka2-deployment.yaml
+#
+#echo "  - Kafka Services: kubectl create -f fabric-kafka3-service.yaml"
+#kubectl create -f fabric-kafka3-service.yaml
+#echo "  - Kafka Deployments: kubectl create -f fabric-kafka3-deployment.yaml"
+#kubectl create -f fabric-kafka3-deployment.yaml
 
-echo "  - [waiting 5s]"
-sleep 5
+## Create couchdb
+#echo "  - CouchDb Service: kubectl create -f fabric-couchdb.yaml"
+#kubectl create -f fabric-couchdb.yaml
 
-echo "  - Kafka Services: kubectl create -f fabric-kafka0-service.yaml"
-kubectl create -f fabric-kafka0-service.yaml
-echo "  - Kafka Deployments: kubectl create -f fabric-kafka0-deployment.yaml"
-kubectl create -f fabric-kafka0-deployment.yaml
-
-echo "  - Kafka Services: kubectl create -f fabric-kafka1-service.yaml"
-kubectl create -f fabric-kafka1-service.yaml
-echo "  - Kafka Deployments: kubectl create -f fabric-kafka1-deployment.yaml"
-kubectl create -f fabric-kafka1-deployment.yaml
-
-echo "  - Kafka Services: kubectl create -f fabric-kafka2-service.yaml"
-kubectl create -f fabric-kafka2-service.yaml
-echo "  - Kafka Deployments: kubectl create -f fabric-kafka2-deployment.yaml"
-kubectl create -f fabric-kafka2-deployment.yaml
-
-echo "  - Kafka Services: kubectl create -f fabric-kafka3-service.yaml"
-kubectl create -f fabric-kafka3-service.yaml
-echo "  - Kafka Deployments: kubectl create -f fabric-kafka3-deployment.yaml"
-kubectl create -f fabric-kafka3-deployment.yaml
-
-# Create couchdb
-echo "  - CouchDb Service: kubectl create -f fabric-couchdb.yaml"
-kubectl create -f fabric-couchdb.yaml
-
-echo "  - [waiting 5s]"
-sleep 5s
+#echo "  - [waiting 5s]"
+#sleep 5s
 
 # Create Orderer 
 echo "  - Orderer Service: kubectl create -f fabric-orderer.yaml"
